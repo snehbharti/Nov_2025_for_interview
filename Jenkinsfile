@@ -32,7 +32,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh "mvn clean test -DsuiteXmlFile=testng/${params.SUITE} -Denv=${params.ENV}"
+                bat "mvn clean test -DsuiteXmlFile=testng/${params.SUITE} -Denv=${params.ENV}"
             }
         }
 
