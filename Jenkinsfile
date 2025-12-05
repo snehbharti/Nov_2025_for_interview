@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/snehbharti/Nov_2025_for_interview.git'
+                git branch: "main", url: 'https://github.com/snehbharti/Nov_2025_for_interview.git'
             }
         }
 
