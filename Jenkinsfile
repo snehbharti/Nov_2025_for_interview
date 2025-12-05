@@ -18,13 +18,13 @@ pipeline {
             steps {
                 script {
                     if (params.ENV == 'qa') {
-                        env.BASE_URL = "https://qa.yourapp.com"
+                        env.BASE_URL = "https://google.com"
                     }
                     if (params.ENV == 'uat') {
-                        env.BASE_URL = "https://uat.yourapp.com"
+                        env.BASE_URL = "https://yahoo.com"
                     }
                     if (params.ENV == 'prod') {
-                        env.BASE_URL = "https://prod.yourapp.com"
+                        env.BASE_URL = "https://facebook.com"
                     }
                 }
             }
