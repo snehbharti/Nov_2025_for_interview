@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Testing Sneh ]]>
+    </line>
+    <line>
+      <![CDATA[Google--->smoke test case]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-12-05T12:57:53 IST" name="Automation Suite" finished-at="2025-12-05T12:58:06 IST" duration-ms="12727">
+    <groups>
+    </groups>
+    <test started-at="2025-12-05T12:57:53 IST" name="Regression Tests" finished-at="2025-12-05T12:58:06 IST" duration-ms="12727">
+      <class name="testcases.DataProvider_Test">
+        <test-method signature="createApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.DataProvider_Test@942a29c]" started-at="2025-12-05T12:57:54 IST" name="createApplication" data-provider="getData" finished-at="2025-12-05T12:57:54 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1111111.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApplication -->
+        <test-method signature="createApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.DataProvider_Test@942a29c]" started-at="2025-12-05T12:57:54 IST" name="createApplication" data-provider="getData" finished-at="2025-12-05T12:57:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Babita]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2.2222222E7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApplication -->
+        <test-method signature="createApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.DataProvider_Test@942a29c]" started-at="2025-12-05T12:57:54 IST" name="createApplication" data-provider="getData" finished-at="2025-12-05T12:57:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chaman]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3333333.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApplication -->
+        <test-method signature="createApplication(java.lang.String,java.lang.String)[pri:0, instance:testcases.DataProvider_Test@942a29c]" started-at="2025-12-05T12:57:54 IST" name="createApplication" data-provider="getData" finished-at="2025-12-05T12:57:54 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Dipesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4.4444444E7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createApplication -->
+      </class> <!-- testcases.DataProvider_Test -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.LoginTest@38cee291]" started-at="2025-12-05T12:57:54 IST" name="setUp" finished-at="2025-12-05T12:58:00 IST" duration-ms="5461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:testcases.LoginTest@38cee291]" started-at="2025-12-05T12:58:00 IST" name="testLogin" finished-at="2025-12-05T12:58:00 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Testing Sneh ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.LoginTest@38cee291]" started-at="2025-12-05T12:58:00 IST" name="tearDown" finished-at="2025-12-05T12:58:00 IST" duration-ms="400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.SmokeTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.SmokeTestCase@6d4d66d2]" started-at="2025-12-05T12:58:00 IST" name="setUp" finished-at="2025-12-05T12:58:03 IST" duration-ms="2387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogin()[pri:0, instance:testcases.SmokeTestCase@6d4d66d2]" started-at="2025-12-05T12:58:03 IST" name="testLogin" finished-at="2025-12-05T12:58:03 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Google--->smoke test case]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.SmokeTestCase@6d4d66d2]" started-at="2025-12-05T12:58:03 IST" name="tearDown" finished-at="2025-12-05T12:58:03 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.SmokeTestCase -->
+      <class name="testcases.TimePass">
+        <test-method signature="getCookiesData()[pri:0, instance:testcases.TimePass@2a265ea9]" started-at="2025-12-05T12:58:03 IST" name="getCookiesData" finished-at="2025-12-05T12:58:06 IST" duration-ms="3347" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af87ae97197ea1dd0c3bcb8595451a93, getCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Sneh\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51310}, goog:processID: 11944, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af87ae97197ea1dd0c3bcb8595451a93]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [af87ae97197ea1dd0c3bcb8595451a93, getCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\Sneh\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51310}, goog:processID: 11944, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51310/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: af87ae97197ea1dd0c3bcb8595451a93
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:634)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:638)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.getCookies(RemoteWebDriver.java:912)
+at testcases.TimePass.getCookiesData(TimePass.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCookiesData -->
+      </class> <!-- testcases.TimePass -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Automation Suite -->
+</testng-results>

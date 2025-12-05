@@ -1,0 +1,46 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(name: 'ENV', choices: ['qa', 'uat', 'prod'], description: 'Select environment')
+        choice(name: 'SUITE', choices: ['smoke.xml', 'sanity.xml', 'regression.xml'], description: 'Select TestNG Suite')
+    }
+
+    stages {
+
+        stage('Checkout Code') {
+            steps {
+                git branch: "${env.BRANCH_NAME}", url: 'https://github.com/your/repo.git'
+            }
+        }
+
+        stage('Setup Environment') {
+            steps {
+                script {
+                    if (params.ENV == 'qa') {
+                        env.BASE_URL = "https://qa.yourapp.com"
+                    }
+                    if (params.ENV == 'uat') {
+                        env.BASE_URL = "https://uat.yourapp.com"
+                    }
+                    if (params.ENV == 'prod') {
+                        env.BASE_URL = "https://prod.yourapp.com"
+                    }
+                }
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh "mvn clean test -DsuiteXmlFile=testng/${params.SUITE} -Denv=${params.ENV}"
+            }
+        }
+
+        stage('Archive Results') {
+            steps {
+                junit 'test-output/*.xml'
+                archiveArtifacts allowEmptyArchive: true, artifacts: 'screenshots/**/*.png'
+            }
+        }
+    }
+}

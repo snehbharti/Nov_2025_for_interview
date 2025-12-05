@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.uiautomation.in</groupId>
+	<artifactId>com.artifactid.in</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency><!-- https://mvnrepository.com/artifact/org.testng/testng -->
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.2</version>
+			<!--scope>test</!scope-->
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.38.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.4.1</version>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.25.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.3</version>
+		</dependency>
+
+	</dependencies>
+	<properties>
+		<!-- Default to 'qa' if no environment is provided -->
+		<env>qa</env>
+		<maven.compiler.source>1.8</maven.compiler.source><!-- when i add this
+		two lines then maven clean install was got running .its solve the
+		compatability issue-->
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<build>
+		<plugins>
+			<!-- TestNG Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.2</version> <!-- or latest version -->
+				<configuration>
+				<!-- PASS MAVEN VARIABLES TO TESTNG -->
+                    <systemPropertyVariables>
+                        <browser>${browser}</browser>
+                        <env>${env}</env>
+                    </systemPropertyVariables>
+
+					<suiteXmlFiles>
+						<suiteXmlFile>${suiteXmlFile}</suiteXmlFile> <!-- path to your
+						testng.xml -->
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<profiles>
+    <!-- BROWSERS -->
+    <profile>
+        <id>chrome</id>
+        <properties>
+            <browser>chrome</browser>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>firefox</id>
+        <properties>
+            <browser>firefox</browser>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>edge</id>
+        <properties>
+            <browser>edge</browser>
+        </properties>
+    </profile>
+
+    <!-- ENVIRONMENTS -->
+    <profile>
+        <id>qa</id>
+        <properties>
+            <env>qa</env>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>uat</id>
+        <properties>
+            <env>uat</env>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>prod</id>
+        <properties>
+            <env>prod</env>
+        </properties>
+    </profile>
+    <profile>
+        <id>smoke</id>
+        <properties>
+            <suiteXmlFile>smoke.xml</suiteXmlFile>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>regression</id>
+        <properties>
+            <suiteXmlFile>regression.xml</suiteXmlFile>
+        </properties>
+    </profile>
+
+    <profile>
+        <id>sanity</id>
+        <properties>
+            <suiteXmlFile>sanity.xml</suiteXmlFile>
+        </properties>
+    </profile>
+</profiles>
+
+
+
+</project>
