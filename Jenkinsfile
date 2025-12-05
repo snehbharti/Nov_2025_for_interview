@@ -38,7 +38,7 @@ pipeline {
 
         stage('Archive Results') {
             steps {
-                junit 'test-output/*.xml'
+                junit 'target/surefire-reports/*.xml'
                 archiveArtifacts allowEmptyArchive: true, artifacts: 'screenshots/**/*.png'
             }
         }
